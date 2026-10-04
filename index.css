@@ -1,0 +1,280 @@
+.headtext {
+    padding: 55px;
+    background-image: url('mainback.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+}
+
+.texttop {
+    color: var(--theme-color);
+    text-shadow: 0 0 2px var(--theme-color);
+}
+
+.developer {
+    font-size: 8rem;
+    color: var(--theme-color);
+    display: inline-block;
+    text-shadow: 0 0 10px var(--theme-color);
+}
+
+.creative {
+    font-size: 6rem;
+    margin-top: 10px;
+    text-shadow: 0 0 2px var(--secondary-theme-color);
+}
+
+p {
+    font-size: 25px;
+    text-shadow: 0 0 2px var(--secondary-theme-color);
+}
+
+.vp {
+    margin-top: 25px;
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: 2px solid var(--theme-color);
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+    box-shadow: inset 0 0 20px var(--theme-color), 0 0 13px var(--theme-color);
+    opacity: 0.3;
+    transition: transform 0.3s ease;
+}
+
+.vpa {
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+.button {
+    text-shadow: 0 0 5px var(--theme-color);
+}
+
+.vp:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+
+.projects {
+    padding: 55px;
+}
+
+.protext {
+    text-align: center;
+    text-shadow: 0 0 2px var(--secondary-theme-color);
+    margin-bottom: 30px;
+}
+
+.procard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    place-items: center;
+}
+
+.cards {
+    padding: 15px 25px;
+    height: 400px;
+    gap: 5px;
+    border: 2px solid var(--theme-color);
+    border-radius: 15px;
+    position: relative;
+}
+
+.cards span:first-child {
+    color: var(--theme-color);
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px var(--theme-color);
+}
+
+.cards span:nth-child(2) {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px var(--secondary-theme-color);
+}
+
+.proimg {
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--theme-background);
+    height: 250px;
+    width: 100%;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.proimg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.proimg:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@media (max-width: 1140px) {
+    .proj3 {
+        display: none;
+    }
+
+    .developer {
+        font-size: 7rem;
+    }
+
+    .creative {
+        font-size: 5rem;
+    }
+
+    .texttop {
+        font-size: 25px;
+    }
+
+    .cards {
+        height: 350px;
+    }
+
+    .cards span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .proimg {
+        height: 220px;
+    }
+}
+
+@media (max-width: 900px) {
+    .developer {
+        font-size: 5rem;
+    }
+
+    .creative {
+        font-size: 3.5rem;
+    }
+
+    .texttop {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .projects {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .developer {
+        font-size: 4rem;
+    }
+
+    .creative {
+        font-size: 3rem;
+    }
+
+    .subdev {
+        font-size: 18px;
+    }
+
+    .headtext {
+        padding: 25px;
+    }
+
+    .projects {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .developer {
+        font-size: 48px;
+    }
+
+    .creative {
+        font-size: 38px;
+    }
+
+    .texttop {
+        font-size: 16px;
+    }
+
+    .subdev {
+        display: none;
+    }
+
+    .vp {
+        padding: 10px 15px;
+    }
+
+    .protext {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .texttop {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .developer {
+        font-size: 38px;
+    }
+
+    .creative {
+        font-size: 28px;
+    }
+
+    .texttop {
+        font-size: 12px;
+    }
+
+    .procard {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .cards {
+        height: 250px;
+    }
+
+    .cards span:first-child {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .cards span:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .proimg {
+        height: 150px;
+    }
+}
+
+@media (max-width: 350px) {
+    .developer {
+        font-size: 28px;
+    }
+
+    .creative {
+        font-size: 20px;
+    }
+
+    .ul {
+        gap: 0.2rem;
+    }
+
+    .vp {
+        padding: 10px;
+    }
+}
